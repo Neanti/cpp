@@ -4,6 +4,7 @@
 
 #include <string>
 #include <iostream>
+#include <cstring>
 #include "Tlist.h"
 
 template<class T>
@@ -56,16 +57,38 @@ void Tlist<char*>::aff() {
 template<class T>
 void Tlist<T>::add_back(Tnoeud<T>* n) {
     Tnoeud<T>* ite = this->getPremier();
-    if(ite == NULL)
+    if(ite == nullptr)
     {
-        this->setPremier(NULL);
+        this->setPremier(n);
+        return;
     }
     Tnoeud<T> it = *ite;
-    while(it.getNext())
+    while(ite->getNext())
     {
-        it = *(it.getNext());
+        ite = ite->getNext();
     }
-    it.setNext(n);
+    ite->setNext(n);
+}
+
+template <>
+void Tlist<char*>::addNew(char *data) {
+    char* s = (char*)malloc(sizeof(char) * (strlen(data) + 1));
+    int i = 0;
+    while(i < strlen(data))
+    {
+        s[i] = data[i];
+        i++;
+    }
+    s[i] = '\0';
+    Tnoeud<char*>* t = new Tnoeud<char*>();
+    t->setData(s);
+    t->setNext(nullptr);
+    this->add_back(t);
+}
+
+template<class T>
+void Tlist<T>::addNew(T data) {
+
 }
 
 template<class T>

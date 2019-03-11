@@ -11,13 +11,22 @@ using namespace std;
 int main() {
 
     Tlist<char*>* l = new Tlist<char*>();
-    Tnoeud<char*>* tmp = new Tnoeud<char*>();
-    char stmp[64];
+    char tmp[64];
     printf("nom classe :\n");
-    scanf("%s",stmp);
-    tmp->setData(stmp);
-    l->add_back(tmp);
-    l->aff();
+    cin >> tmp;
+    l->addNew(tmp);
+    cout << "nombre d attributs :" << endl;
+    cin >> tmp;
+    l->addNew(tmp);
+    int f = atoi(tmp);
+    int i = 0;*
+    while (i < f)
+    {
+        i++;
+    }
+
+     l->aff();
+
 
     return 0;
 }

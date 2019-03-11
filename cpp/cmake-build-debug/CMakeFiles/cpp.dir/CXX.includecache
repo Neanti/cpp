@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/neati/CLionProjects/git/cpp/Tlist.cpp
+string
+-
+iostream
+-
+cstring
+-
+Tlist.h
+/home/neati/CLionProjects/git/cpp/Tlist.h
+
+/home/neati/CLionProjects/git/cpp/Tlist.h
+Tnoeud.h
+/home/neati/CLionProjects/git/cpp/Tnoeud.h
+
+/home/neati/CLionProjects/git/cpp/Tnoeud.h
+

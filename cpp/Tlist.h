@@ -20,6 +20,8 @@ public:
 
     void add_front(T d);
 
+    void addNew(T data);
+
     Tnoeud<T>* getLast();
 
     void aff();

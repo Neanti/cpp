@@ -6,19 +6,37 @@
 
 #IncludeRegexTransform: 
 
-/home/neati/CLionProjects/git/cpp/Tlist.cpp
+/home/neati/CLionProjects/git/cpp/Client.h
 string
 -
-iostream
--
-cstring
--
-Tlist.h
-/home/neati/CLionProjects/git/cpp/Tlist.h
+
+/home/neati/CLionProjects/git/cpp/Liste.h
+Noeud.h
+/home/neati/CLionProjects/git/cpp/Noeud.h
+
+/home/neati/CLionProjects/git/cpp/Noeud.h
 
 /home/neati/CLionProjects/git/cpp/Tlist.h
 Tnoeud.h
 /home/neati/CLionProjects/git/cpp/Tnoeud.h
 
 /home/neati/CLionProjects/git/cpp/Tnoeud.h
+
+/home/neati/CLionProjects/git/cpp/main.cpp
+iostream
+-
+stdio.h
+-
+vector
+-
+string
+-
+Client.h
+/home/neati/CLionProjects/git/cpp/Client.h
+Liste.h
+/home/neati/CLionProjects/git/cpp/Liste.h
+Tnoeud.h
+/home/neati/CLionProjects/git/cpp/Tnoeud.h
+Tlist.h
+/home/neati/CLionProjects/git/cpp/Tlist.h
 
